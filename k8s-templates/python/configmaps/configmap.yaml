@@ -1,0 +1,13 @@
+# configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: __APP_NAME__
+  namespace: __NAMESPACE__
+  labels:
+    app: __APP_NAME__
+    costcenter: "dvsaidevops"
+data:
+  APP_ENV: "production"
+  LOG_LEVEL: "info"
+  API_URL: "https://api.example.com"
